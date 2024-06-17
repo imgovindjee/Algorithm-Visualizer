@@ -1,0 +1,98 @@
+// .card__body {
+//     width: 300px;
+//     height: 230px;
+//     border-radius: 10px;
+//     border: 1px solid;
+//     box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
+//     overflow: hidden;
+
+//     &:hover {
+//         transform: scale(1.05);
+//         box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+//             rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+//             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+//     }
+
+//     transition: 500ms;
+
+
+//     div {
+//         .image__card {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+
+//     .card__bottom {
+//         text-align: center;
+//         padding: auto;
+//         letter-spacing: .02em;
+//         font-size: xx-large;
+//         color: rgb(126, 161, 150);
+//     }
+// }
+
+
+
+.card__body {
+    position: relative;
+    border-radius: 2rem;
+    box-sizing: 0 0 1rem #1f242d;
+    display: flex;
+    overflow: hidden;
+    height: 250px;
+    width: 340px;
+
+    &:hover {
+        box-shadow: rgba(219, 159, 159, 0.774) 0px 1px 1px 0px inset,
+            rgba(206, 206, 218, 0.67) 0px 50px 100px -20px,
+            rgba(221, 200, 200, 0.801) 0px 30px 60px -30px;
+    }
+
+    .card__image {
+        width: 100%;
+        transition: .5s ease;
+    }
+
+    .card__bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: .4rem;
+        transform: translateY(100%);
+        transition: .5s ease;
+
+
+        h4 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            // color: #1f242d;
+        }
+
+        p {
+            font-size: .6rem;
+            margin: .3rem 0 1rem;
+            color: rgb(41, 47, 52);
+        }
+    }
+
+    &:hover {
+        .card__image {
+            transform: scale(1.2);
+        }
+
+        .card__bottom {
+            transform: translateY(0);
+            cursor: pointer;
+        }
+    }
+}

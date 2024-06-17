@@ -1,0 +1,77 @@
+.queen-container {
+    height: 90vh;
+    width: 100vw;
+
+
+    .queen-header {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+        max-width: 680px;
+
+        .queen-range{
+            display: flex;
+            justify-content: center;
+
+            .queenlabel{
+                padding-right: 5px;
+                padding-top: 2px;
+                color: rgb(79, 79, 82);
+            }
+        }
+
+        @media only screen and (min-width: 534px) {
+            .queen-range {
+                flex-direction: column
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .queen-header {
+            margin: 15px 10px;
+        }
+    }
+
+
+    .main-body {
+        .queen-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .queen-cell {
+                width: 70px;
+                height: 70px;
+                outline: 1px solid #607d8b;
+            }
+
+            .grey-cell {
+                background-color: grey;
+            }
+
+            .green-cell {
+                background-color: rgb(70, 216, 70);
+            }
+
+            .yellow-cell {
+                background-color: rgb(243, 243, 75);
+            }
+
+            .red-cell {
+                background-color: rgb(250, 114, 114);
+            }
+
+            .blue-cell {
+                background-color: rgb(148, 200, 248);
+            }
+
+            .queen-img {
+                background-image: url(../../assets/NQueen_image/queen.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 50px;
+            }
+        }
+    }
+}

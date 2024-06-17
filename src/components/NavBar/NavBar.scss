@@ -1,0 +1,29 @@
+.topbar{
+    // background-color: rgb(7, 76, 106);
+    background-color: #1f242d;
+
+    .navbar{
+        max-width: 1250px;
+        padding: 15px 50px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .details{
+        .navLink{
+            padding: 7px 15px;
+            cursor: pointer;
+            color: whitesmoke;
+            margin: 10px;
+            border: 1px solid transparent;
+            border-radius: 20px;
+
+            &:hover{
+                color: #0ef;
+            }
+
+            transition: color .3s ease-in-out;
+        }
+    }
+}

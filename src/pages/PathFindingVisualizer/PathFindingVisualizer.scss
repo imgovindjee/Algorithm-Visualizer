@@ -1,0 +1,46 @@
+#Container-blur {
+
+    .path-container {
+        margin: 10px auto;
+        padding-bottom: 10px;
+        max-width: 938px;
+
+        .path-header {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+
+            div {
+                .path-speed-btns {
+                    margin-top: 6px;
+                }
+            }
+
+            .maze_options {
+                div {
+                    select {
+                        .my-drop-down-option {
+                            cursor: pointer;
+                            padding: 5.5px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        .grid {
+            display: flex;
+            justify-content: center;
+
+            div{
+                .ROW{
+                    display: flex;
+                    
+                }
+            }
+        }
+    }
+}

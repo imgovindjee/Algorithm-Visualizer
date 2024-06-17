@@ -1,0 +1,28 @@
+.mycontainer {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    // background-color: rgb(255, 255, 255);
+    background-color: #343946;
+    position: relative;
+    margin-bottom: 100px;
+
+
+    .cards_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 80px;
+        justify-content: center;
+
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .cards_container {
+            margin: 0px 50px;
+            display: grid;
+            grid-template-columns: auto;
+            row-gap: 50px;
+            justify-content: center;
+        }
+    }
+}
